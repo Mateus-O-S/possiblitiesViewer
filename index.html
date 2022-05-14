@@ -30,8 +30,8 @@
         ok.addEventListener('click', () => {
             console.log('click')
             screen.innerHTML = ""
-            for (let number=0; number <= diceNumber.value; number ++) {
-                for (let face=0; face <= diceFaces.value; face ++) {
+            for (let number=1; number <= diceNumber.value; number ++) {
+                for (let face=1; face <= diceFaces.value; face ++) {
                     screen.innerHTML += `(${number}-${face}), `
                     console.log(`loading - ${(number*face) / (diceNumber.value * diceFaces.value) * 100}%`)
                 }
