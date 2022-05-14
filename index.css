@@ -33,12 +33,26 @@ header > h1 {
     margin-bottom: 0.5%;
 }
 
-#viewScreen {
+#view {
     width: 60%;
     height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#viewScreen {
+    width: 100%;
+    height: 97%;
     border: 2px #000 solid;
     resize: none;
     font-size: 20px;
+}
+
+#possibilities {
+    width: 100%;
+    height: 3%;
+    font-size: 16px;
 }
 
 #input {
@@ -86,7 +100,7 @@ header > h1 {
         margin: 0;
     }
 
-    #viewScreen, #input{
+    #view, #input{
         width: 95%;
     }
 }
